@@ -19,7 +19,7 @@ git clone https://github.com/claudiopica/HiRep.git
 mkdir tests # 
 ./hirep-test-sunbird/main.sh  HiRep \
                              ./tests \
-                             ./hirep-test-sunbird/script_header_sunbird.sh \
+                             ./hirep-test-sunbird/script_header_sunbird_intel.sh \
                              spn-swansea-merge
               
 cd tests
