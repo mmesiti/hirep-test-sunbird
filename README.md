@@ -21,8 +21,9 @@ mkdir tests #
                              ./tests \
                              ./hirep-test-sunbird/script_header_sunbird.sh \
                              spn-swansea-merge
-                             
-for script in tests/script*.sh
+              
+cd tests
+for script in script*.sh
 do 
    sbatch $script
 done
@@ -31,7 +32,6 @@ Wait until all jobs have run,
 then
 
 ```bash
-cd tests
 ../hirep-test-sunbird/report.sh 
 ```
 And look at the results.
