@@ -32,11 +32,13 @@ create_numbered_hirep_repo_clones(){
     local HIREP_REPO=$1
     local MASTER_TEST_DIR=$2
     local N=$3
+    local CHECKOUT=$4
     mkdir -p $MASTER_TEST_DIR
     for I in $(seq $N)
     do 
         DIR=$MASTER_TEST_DIR/$I
         git clone --depth=1 $HIREP_REPO $DIR
+        (cd $DIR && git checkout $CHECKOUT)
         cp $_UTILS/run_tests_old.sh $DIR/TestProgram
     done
 }
