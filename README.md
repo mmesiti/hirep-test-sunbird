@@ -15,9 +15,9 @@ Each test case runs in its own repo.
 
 ``` bash
 git clone https://github.com/mmesiti/hirep-test-sunbird.git
-
+git clone https://github.com/claudiopica/HiRep.git
 mkdir tests # 
-./hirep-test-sunbird/main.sh https://github.com/claudiopica/HiRep.git \
+./hirep-test-sunbird/main.sh  HiRep \
                              ./tests \
                              ./hirep-test-sunbird/script_header_sunbird_intel.sh \
                              spn-swansea-merge
