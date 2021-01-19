@@ -2,7 +2,7 @@
 #SBATCH -n 2
 #SBATCH --oversubscribe
 #SBATCH -A scw1019
-#SBATCH -t 40
+#SBATCH -t 120 
 #SBATCH -J HRTS # HiRep Test Suite
 #SBATCH -o outSED_I.txt
 #SBATCH -e errSED_I.txt
