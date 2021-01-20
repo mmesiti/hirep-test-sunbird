@@ -1,9 +1,10 @@
 #!/usr/bin/bash
-#SBATCH -n 2
-#SBATCH --oversubscribe
+#SBATCH --ntasks=2
+#SBATCH --ntasks-per-node=2
+#SBATCH --cpus-per-tasks=1
 #SBATCH -A scw1019
 #SBATCH -t 120 
-#SBATCH -J HRTS # HiRep Test Suite
+#SBATCH -J HRTSSED_I # HiRep Test Suite
 #SBATCH -o outSED_I.txt
 #SBATCH -e errSED_I.txt
   
