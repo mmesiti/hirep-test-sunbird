@@ -28,7 +28,14 @@ analyse_file(){
     printf "## ($FILENAME) %s %s\n" "$(get_options $FILENAME )" "$(check_ok $FILENAME)"
 }
 
-for FILENAME in out*.txt
+if [ $# -eq 0 ]
+then
+    FILES=out*.txt
+else
+    FILES=$@
+fi
+
+for FILENAME in $FILES
 do
     analyse_file $FILENAME
 done 
